@@ -9,8 +9,8 @@
 	<body class="bg-black font-inter text-white">
 		<!-- HEADER -->
 		<header class="flex justify-between items-center gap-3 col-span-3 bg-gray px-3 py-1">
-			<h1 class="text-3xl text-primary">Robotani</h1>
-			<ul class="flex gap-4 bg-black p-2 rounded-md h-full text-sm">
+			<h1 class="font-semibold text-3xl text-primary">Robotani</h1>
+			<ul class="flex gap-4 bg-black p-2 rounded-md h-full text-sm desktop:text-lg">
 				<li class="flex items-center gap-1">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 						<path
@@ -57,38 +57,40 @@
 		</header>
 
 		<!-- CAMERA -->
-		<main class="gap-3 grid grid-cols-3 p-3">
-			<div class="col-span-2">
-				<img src="resource/image/camera-placeholder.jpg" alt="camera" class="rounded-lg min-w-full max-h-32" />
+		<main class="gap-3 grid grid-cols-3 px-3 py-2">
+			<div class="flex justify-center col-span-2 bg-gray p-1 rounded-lg">
+				<div class="flex-grow min-w-lg max-w-lg">
+					<img src="resource/image/camera-placeholder.jpg" alt="camera" class="rounded-lg min-w-full max-h-32" />
+				</div>
 			</div>
 
 			<!-- CONTROL -->
-			<div class="static flex justify-center items-start row-span-2 bg-gray">
-				<button class="top-20 right-24 fixed bg-black active:bg-secondary p-2 rounded-full w-fit">
+			<div class="relative row-span-2 bg-gray">
+				<button class="top-[20%] desktop:p-5 right-[33%] absolute bg-black active:bg-secondary p-2 rounded-full w-fit">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
 					</svg>
 				</button>
-				<button class="top-36 right-36 fixed bg-black active:bg-secondary p-2 rounded-full w-fit">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-					</svg>
-				</button>
-				<button class="top-36 right-12 fixed bg-black active:bg-secondary p-2 rounded-full w-fit">
+				<button class="top-[40%] desktop:p-5 right-[10%] absolute bg-black active:bg-secondary p-2 rounded-full w-fit">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
 					</svg>
 				</button>
-				<button class="top-52 right-24 fixed bg-black active:bg-secondary p-2 rounded-full w-fit">
+				<button class="top-[60%] desktop:p-5 right-[33%] absolute bg-black active:bg-secondary p-2 rounded-full w-fit">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+					</svg>
+				</button>
+				<button class="top-[40%] desktop:p-5 right-[55%] absolute bg-black active:bg-secondary p-2 rounded-full w-fit">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
 					</svg>
 				</button>
 			</div>
 
 			<!-- BOTTOM -->
 			<div class="gap-4 grid grid-cols-2 col-span-2">
-				<div class="row-span-2">
+				<div class="flex justify-center row-span-2 bg-gray p-1 rounded-lg">
 					<img src="resource/image/map.jfif" alt="map" class="rounded-lg" />
 				</div>
 				<div class="items-stretch gap-1 grid grid-cols-2 row-span-2">
