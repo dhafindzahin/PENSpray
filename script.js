@@ -27,7 +27,7 @@ document.addEventListener("keyup", (e) => {
 		if (e.key === button) {
 			if (keyHold[button]) {
 				keyMap[button].classList.remove("bg-secondary");
-				keyMap[button].classList.remove("text-white");
+				keyMap[button].classList.remove("text-black");
 				keyHold[button] = false;
 			}
 		}
